@@ -1,0 +1,205 @@
+﻿@keyframes animacao-logo{
+    0%{
+        color: lightblue;
+        top: -20%;
+    }
+    25%{
+        color: cornflowerblue;
+    }
+    50%{
+        color: lightskyblue;
+        top: 8%;
+    }
+    100% {
+        color: white;
+        top: 5%;
+    }
+}
+
+body {
+    background-color: #313131;
+}
+
+#container {
+    flex-direction: row;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+#logo {
+    height: 5%;
+    width: 5%;
+    position: fixed;
+    top: 5%;
+    left: 42%;
+    color: white;
+    font-size: 50px;
+    animation-name: animacao-logo;
+    animation-duration: 5s;
+    text-align: center;
+    animation-timing-function: ease;
+}
+
+.container2 {
+    height: 100%;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15%;
+    margin-left: 20%;
+}
+
+.container3 {
+    height: 100%;
+    width: 235px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15%;
+    margin-left: 3%;
+}
+
+.sessoes {
+    margin-top: 5%;
+    font-size: 35px;
+    font-family: Cambria;
+    color: white;
+}
+
+.sessoes2 {
+    margin-top: 20%;
+    font-size: 35px;
+    font-family: Cambria;
+    color: white;
+}
+
+#imagem_principal {
+    background-image: url("imagens/imagem_principal.svg");
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 500px;
+    background-size: 500px 500px;
+    margin: 12.5% 0px 0px 13%;
+}
+
+#div_botao1 {
+    background-image: url("imagens/botao.png");
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+#div_botao1:hover,
+#div_botao1:focus {
+    transform: translateX(0px) scale(1.1);
+}
+
+#div_botao2 {
+    background-image: url("imagens/botao.png");
+    background-repeat: no-repeat;
+    margin-top: 25%;
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+#div_botao2:hover,
+#div_botao2:focus {
+    transform: translateX(0px) scale(1.1);
+}
+
+#div_botao3 {
+    background-image: url("imagens/botao.png");
+    background-repeat: no-repeat;
+    margin-top: 25%;
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+#div_botao3:hover,
+#div_botao3:focus {
+    transform: translateX(0px) scale(1.1);
+}
+
+.div_botao_voltar {
+    background-image: url("imagens/voltar.png");
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 100px;
+    margin-top: 30px;
+    margin-left: 40%;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.div_botao_voltar:hover,
+.div_botao_voltar:focus {
+    transform: translateX(0px) scale(0.9);
+}
+
+#vis-modal_diretor {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+
+#vis-modal_vice {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+
+#vis-modal_coordenador {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+
+.conteudo-modal {
+    margin: 0 auto;
+    margin-top: 12%;
+    width: 40%;
+    background-color: #fff;
+}
+
+.cabeçalho-modal{
+    padding: 1px 8px;
+    display: flex;
+    justify-content: space-between;
+    border: solid #eee 1px;
+}
+
+.cabeçalho-modal .cabeçalho-titulo-modal {
+    font-weight: bold;
+    margin: 10px 30px;
+    font-size: 45px;
+    font-family: Cambria;
+}
+
+.cabeçalho-modal .cabeçalho-modal-fechar{
+    padding: 20px 10px;
+    cursor: pointer;
+}
+
+.corpo-modal{
+     padding: 1px 8px 8px 8px;
+     width: 97%;
+     font-size: 24px;
+}

@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="style.css" /> <!-- declarando o local do CSS -->
+    <script src="javaScript.js"></script>
+    <title>Atividade Analista de TI</title> <!-- declarando o nome da Página -->
+</head>
+
+<body>
+    <!-- Criando o Container -->
+    <div id="container">
+        <!-- Nome Univates -->
+        <div id="logo">
+            <p class="logo-titulo">UNIVATES</p>
+        </div>
+
+        <!-- Botões -->
+        <div class="container2">
+            <div id="div_botao1" onmouseover="OnMouse('div_botao1')" onmouseout="OffMouse('div_botao1')" onclick="MostrarTela('vis-modal_diretor')"></div>
+            <div id="div_botao2" onmouseover="OnMouse('div_botao2')" onmouseout="OffMouse('div_botao2')" onclick="MostrarTela('vis-modal_vice')"></div>
+            <div id="div_botao3" onmouseover="OnMouse('div_botao3')" onmouseout="OffMouse('div_botao3')" onclick="MostrarTela('vis-modal_coordenador')"></div>
+        </div>
+
+        <!-- Texto ao lado dos botões -->
+        <div class="container3">
+            <p class="sessoes">Diretor(a):</p>
+            <p class="sessoes2">Vice-diretor(a):</p>
+            <p class="sessoes2">Coordenador(a)<br>Pedagógico(a):</p>
+        </div>
+
+        <!-- Imagem Principal -->
+        <div id="imagem_principal"></div>
+    </div>
+
+    <!-- Tela Diretor -->
+    <div id="vis-modal_diretor">
+        <div class="conteudo-modal">
+            <div class="cabeçalho-modal">
+                <h1 class="cabeçalho-titulo-modal">Diretor(a)</h1>
+                <span class="cabeçalho-modal-fechar" onclick="FecharTela('vis-modal_diretor')">X</span>
+            </div>
+
+            <div class="corpo-modal">
+                <p>
+                    Quem é o/a diretor/a da escola? Qual a sua formação?
+                    Quanto tempo atua no cargo? Como foi selecionado/a para o cargo?
+                    O que ele/ela faz? Quais suas funções? Quantas horas trabalha na escola?
+                    Como organiza seus turnos e tarefas?
+                    Quais são os desafios da função de diretor/a?
+                    Na visão dele/a, quais as fragilidades, as dificuldades e/ou as necessidades
+                    pedagógicas da escola
+                </p>
+            </div>
+
+            <div class="div_botao_voltar" onclick="FecharTela('vis-modal_diretor')"></div>
+        </div>
+    </div>
+
+    <!-- Tela Vice-Diretor -->
+    <div id="vis-modal_vice">
+        <div class="conteudo-modal">
+            <div class="cabeçalho-modal">
+                <h1 class="cabeçalho-titulo-modal">Vice-Diretor(a)</h1>
+                <span class="cabeçalho-modal-fechar" onclick="FecharTela('vis-modal_vice')">X</span>
+            </div>
+
+            <div class="corpo-modal">
+                <p>
+                    Quem é o/a vice-diretor/a da escola? Qual a sua formação?
+                    Quanto tempo atua no cargo? Como foi selecionado/a para o cargo?
+                    O que ele/ela faz? Quais suas funções? Quantas horas trabalha na escola?
+                    Como organiza seus turnos e tarefas? Quais são os desafios da função de vice-diretor/a?
+                    Na visão dele/dela, quais as fragilidades, dificuldades e/ou necessidades pedagógicas da escola?
+                </p>
+            </div>
+
+            <div class="div_botao_voltar" onclick="FecharTela('vis-modal_vice')"></div>
+        </div>
+    </div>
+
+    <!-- Tela Coordenador -->
+    <div id="vis-modal_coordenador">
+        <div class="conteudo-modal">
+            <div class="cabeçalho-modal">
+                <h1 class="cabeçalho-titulo-modal">Coordenador(a) Pedagógico(a)</h1>
+                <span class="cabeçalho-modal-fechar" onclick="FecharTela('vis-modal_coordenador')">X</span>
+            </div>
+
+            <div class="corpo-modal">
+                <p>
+                    Quem é o/a coordenador/a pedagógico/a da escola? Qual a sua formação? Quanto tempo atua no cargo?
+                    Como foi selecionado/a para o cargo? O que ele/ela faz? Quais suas funções?
+                    Quantas horas trabalha na escola? Como organiza seus turnos e tarefas?
+                    Quais são os desafios da função de coordenador/a pedagógico/a? Na visão dele/dela,
+                    quais as fragilidades, dificuldades e/ou necessidades pedagógicas da escola?
+                </p>
+            </div>
+
+            <div class="div_botao_voltar" onclick="FecharTela('vis-modal_coordenador')"></div>
+        </div>
+    </div>
+</body>
+</html>
